@@ -47,25 +47,6 @@ Eclipse IDE
 
 Git & GitHub
 
-📂 Project Structure
-foodDileveryApplication/
-│
-├── src/
-│   ├── com.tap.servlets
-│   ├── com.tap.dao
-│   ├── com.tap.model
-│
-├── WebContent/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   ├── login.jsp
-│   ├── register.jsp
-│   ├── menu.jsp
-│   ├── cart.jsp
-│
-├── README.md
-└── pom.xml (if Maven)
 
 🗄️ Database Schema (Menu Table)
 CREATE TABLE menu (
@@ -95,7 +76,6 @@ Run the project:
 
 Right Click Project → Run on Server
 
-
 Open in browser:
 
 http://localhost:8080/foodDileveryApplication
@@ -122,10 +102,6 @@ JWT Authentication
 
 REST APIs with Spring Boot
 
-👨‍💻 Author
-
-Geetha R
-Java Full Stack Developer
 
 ⭐ Support
 
