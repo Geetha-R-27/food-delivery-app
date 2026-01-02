@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+        }
+        .header {
+            background: #ff4d4d;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .menu-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+        .menu-card:hover {
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+        }
+        .menu-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .menu-rating {
+            color: #ffa500;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .menu-desc {
+            font-size: 14px;
+            color: #666;
+            margin: 8px 0;
+        }
+        .menu-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 8px 0;
+        }
+        .add-btn {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Food Menu</div>
+
+<div class="menu-container">
+
+    <!-- Item Template (Repeat 10 Times) -->
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?pizza" class="menu-img" />
+        <div class="menu-name">Cheese Pizza</div>
+        <div class="menu-rating">⭐ 4.5</div>
+        <div class="menu-desc">Delicious cheesy pizza with fresh toppings.</div>
+        <div class="menu-price">₹199</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?burger" class="menu-img" />
+        <div class="menu-name">Beef Burger</div>
+        <div class="menu-rating">⭐ 4.2</div>
+        <div class="menu-desc">Juicy burger with crispy fries.
+        </div>
+        <div class="menu-price">₹149</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?pasta" class="menu-img" />
+        <div class="menu-name">Creamy Pasta</div>
+        <div class="menu-rating">⭐ 4.6</div>
+        <div class="menu-desc">Creamy white sauce pasta with herbs.</div>
+        <div class="menu-price">₹179</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?dosa" class="menu-img" />
+        <div class="menu-name">Masala Dosa</div>
+        <div class="menu-rating">⭐ 4.3</div>
+        <div class="menu-desc">South Indian crispy dosa with chutney.</div>
+        <div class="menu-price">₹99</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?biryani" class="menu-img" />
+        <div class="menu-name">Chicken Biryani</div>
+        <div class="menu-rating">⭐ 4.8</div>
+        <div class="menu-desc">Aromatic biryani with tender chicken.</div>
+        <div class="menu-price">₹249</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?fries" class="menu-img" />
+        <div class="menu-name">French Fries</div>
+        <div class="menu-rating">⭐ 4.1</div>
+        <div class="menu-desc">Crispy golden fries with seasoning.</div>
+        <div class="menu-price">₹79</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?noodles" class="menu-img" />
+        <div class="menu-name">Hakka Noodles</div>
+        <div class="menu-rating">⭐ 4.4</div>
+        <div class="menu-desc">Street-style spicy & tasty noodles.</div>
+        <div class="menu-price">₹129</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?sandwich" class="menu-img" />
+        <div class="menu-name">Veg Sandwich</div>
+        <div class="menu-rating">⭐ 4.0</div>
+        <div class="menu-desc">Fresh veggie sandwich with sauces.</div>
+        <div class="menu-price">₹89</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?icecream" class="menu-img" />
+        <div class="menu-name">Chocolate Ice Cream</div>
+        <div class="menu-rating">⭐ 4.7</div>
+        <div class="menu-desc">Rich chocolate flavoured ice cream.</div>
+        <div class="menu-price">₹59</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?cake" class="menu-img" />
+        <div class="menu-name">Black Forest Cake</div>
+        <div class="menu-rating">⭐ 4.9</div>
+        <div class="menu-desc">Soft cake with whipped cream layers.</div>
+        <div class="menu-price">₹299</div>
+        <button class="add-btn">Add to Cart</button>
+    </div>
+
+</div>
+
+</body>
+</html>

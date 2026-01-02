@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .restaurant-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .info {
+            padding: 15px;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .rating {
+            margin: 5px 0;
+            color: #ff8c00;
+            font-weight: bold;
+        }
+        .address {
+            font-size: 14px;
+            color: #555;
+        }
+        .desc {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .eta {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #009688;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurants Near You</h1>
+
+    <div class="restaurant-container">
+
+        <!-- Restaurant Card 1 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?restaurant" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Spice Hub</div>
+                <div class="rating">⭐ 4.3</div>
+                <div class="address">BTM Layout, Bangalore</div>
+                <div class="desc">Famous for Indian, Chinese & Tandoori dishes.</div>
+                <div class="eta">ETA: 30-40 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 2 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/601x400/?food" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Burger World</div>
+                <div class="rating">⭐ 4.1</div>
+                <div class="address">HSR Layout</div>
+                <div class="desc">Delicious burgers, fries & shakes.</div>
+                <div class="eta">ETA: 20-30 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 3 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/602x400/?cafe" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Cafe Delight</div>
+                <div class="rating">⭐ 4.6</div>
+                <div class="address">Koramangala</div>
+                <div class="desc">Coffee, pastries & continental meals.</div>
+                <div class="eta">ETA: 25-35 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 4 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/603x400/?pizza" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Pizza Corner</div>
+                <div class="rating">⭐ 4.0</div>
+                <div class="address">Whitefield</div>
+                <div class="desc">Wood-fired pizzas and pastas.</div>
+                <div class="eta">ETA: 35-45 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 5 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/604x400/?noodles" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Noodle House</div>
+                <div class="rating">⭐ 4.2</div>
+                <div class="address">Indiranagar</div>
+                <div class="desc">Asian noodles, dumplings & ramen.</div>
+                <div class="eta">ETA: 20-25 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 6 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/605x400/?biryani" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Royal Biryani</div>
+                <div class="rating">⭐ 4.5</div>
+                <div class="address">JP Nagar</div>
+                <div class="desc">Authentic Hyderabadi biryani and grills.</div>
+                <div class="eta">ETA: 30-35 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 7 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/606x400/?tacos" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Mexicano Grill</div>
+                <div class="rating">⭐ 4.4</div>
+                <div class="address">Marathahalli</div>
+                <div class="desc">Mexican tacos, burritos & nachos.</div>
+                <div class="eta">ETA: 25-30 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 8 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/607x400/?icecream" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Frosty Ice Creams</div>
+                <div class="rating">⭐ 4.7</div>
+                <div class="address">Malleshwaram</div>
+                <div class="desc">Ice creams, sundaes & milkshakes.</div>
+                <div class="eta">ETA: 15-25 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 9 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/608x400/?south-indian-food" alt="Restaurant" />
+            <div class="info">
+                <div class="name">South Express</div>
+                <div class="rating">⭐ 4.3</div>
+                <div class="address">Rajajinagar</div>
+                <div class="desc">Dosa, idli, vada & South Indian meals.</div>
+                <div class="eta">ETA: 15-20 mins</div>
+            </div>
+        </div>
+
+        <!-- Restaurant Card 10 -->
+        <div class="card">
+            <img src="https://source.unsplash.com/609x400/?thali" alt="Restaurant" />
+            <div class="info">
+                <div class="name">Thali Point</div>
+                <div class="rating">⭐ 4.1</div>
+                <div class="address">MG Road</div>
+                <div class="desc">North Indian thali & home-style meals.</div>
+                <div class="eta">ETA: 20-30 mins</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
