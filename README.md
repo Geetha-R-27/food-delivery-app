@@ -82,7 +82,7 @@ CREATE TABLE menu (
 
 Clone the repository:
 
-git clone https://github.com/sachinyb/food-delivery-app
+git clone https://github.com/Geetha-R-27/food-delivery-app
 
 
 Open project in Eclipse IDE
@@ -124,7 +124,7 @@ REST APIs with Spring Boot
 
 👨‍💻 Author
 
-Sachin
+Geetha R
 Java Full Stack Developer
 
 ⭐ Support
